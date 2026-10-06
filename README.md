@@ -7,7 +7,7 @@ Arduino Simulator（原 ACET Studio）是 Windows 桌面程式，可編寫、編
 **第一次使用，請到 [Releases 最新版本](https://github.com/DHKGOD/Arduino-Simulator/releases/latest)，展開 Assets，下載 `ACET_Studio_Setup_版本號.exe` 完整安裝檔。**
 
 1. 開啟上方的 Releases 連結。
-2. 在 **Assets** 中選擇檔名含 **`Setup`** 的 `.exe`，例如 `ACET_Studio_Setup_1.7.18.exe`。
+2. 在 **Assets** 中選擇檔名含 **`Setup`** 的 `.exe`，例如 `ACET_Studio_Setup_1.7.19.exe`。
 3. 下載完成後執行安裝檔，依畫面指示完成安裝。
 4. 從開始功能表或桌面捷徑開啟 **Arduino Simulator**。
 
@@ -79,14 +79,14 @@ Copyright © 2026 dhkgodez. All rights reserved.
 - 在「工具 → Debug 偵錯」啟用後，可設中斷點、查看區域變數與監看運算式，並逐步執行或繼續模擬。
 - 暫停時模擬時間會凍結；繼續後恢復。偵錯器只在啟用偵錯時啟動。
 - GDB、相依 DLL、Python 標準函式庫與 GDB 支援資料已隨更新及完整安裝包提供；不必另外安裝 GDB 或 Python，也不會修改系統 PATH。
-- 已安裝使用者可從「設定 → 檢查更新」更新。首次安裝或修復請到 [Releases 最新版本](https://github.com/DHKGOD/Arduino-Simulator/releases/latest) 下載 `ACET_Studio_Setup_1.7.18.exe`。
+- 已安裝使用者可從「設定 → 檢查更新」更新。首次安裝或修復請到 [Releases 最新版本](https://github.com/DHKGOD/Arduino-Simulator/releases/latest) 下載 `ACET_Studio_Setup_1.7.19.exe`。
 ## 1.7.16 偵錯與編輯器修正
 
 修正偵錯符號指向 build\sketch.ino 而造成找不到原始碼的問題；中斷點、目前執行行與原始 .ino 檔對應。已實際驗證中斷、單步與區域變數檢視。
 
 舊編譯快取會自動重建一次，之後未變更的程式仍使用快取；行號欄已縮窄，左側中斷點點擊區仍獨立保留。
 
-既有用戶可用程式內更新或下載 ACET_Studio_Update_1.7.16.exe；新安裝或修復請下載 ACET_Studio_Setup_1.7.18.exe。
+既有用戶可用程式內更新或下載 ACET_Studio_Update_1.7.16.exe；新安裝或修復請下載 ACET_Studio_Setup_1.7.19.exe。
 
 ## 1.7.15 更新器修正
 
@@ -103,3 +103,8 @@ Copyright © 2026 dhkgodez. All rights reserved.
 ## 1.7.18 偵錯執行位置
 
 偵錯暫停時以黃色箭頭及整行底色標示下一個執行位置。單步時跟隨移動，繼續與停止時清除；支援深淺色模式且不加寬行號欄。修正暫停狀態被覆寫的問題。
+
+
+## 1.7.19 背景下載與續傳
+
+更新視窗可放到背景，再開啟保留進度。分段連線失敗各自續傳，避免整包重抓；下載完成後由使用者按立即安裝。修正於安裝 1.7.19 後生效。
